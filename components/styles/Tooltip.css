@@ -1,24 +1,27 @@
+/* The tooltip container */
 .tooltip {
-  position: relative;
-  display: block;
+  position: relative; /* Establishes a relative point for the child 'tooltip-text' element */
+  display: block; /* Makes sure the tooltip takes the full width of the parent element */
 }
 
+/* The tooltip text */
 .tooltip-text {
-  visibility: hidden;
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-radius: 4px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 110%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  transition: visibility 0s, opacity 0.5s;
+  visibility: hidden; /* Initially hides the tooltip text */
+  background-color: black; /* Background color for the tooltip text box */
+  color: white; /* Text color in the tooltip text box */
+  text-align: center; /* Centers the text horizontally */
+  border-radius: 4px; /* Rounded corners for the tooltip box */
+  padding: 5px; /* Padding inside the tooltip box */
+  position: absolute; /* Positioning relative to the tooltip container */
+  z-index: 1; /* Stack order of tooltip. Higher z-index will be on top of other elements */
+  bottom: 110%; /* Positioning the tooltip text at the bottom */
+  transform: translateX(-50%); /* Centering the tooltip text box horizontally */
+  white-space: nowrap; /* Prevents the text inside the tooltip from wrapping to the next line */
+  transition: visibility 0s, opacity 0.5s; /* Transition effect for fading in the tooltip text */
 }
 
+/* Changes properties when hovering over the tooltip container */
 .tooltip:hover > .tooltip-text {
-  visibility: visible;
-  opacity: 1;
+  visibility: visible; /* Makes the tooltip text visible */
+  opacity: 1; /* Sets the opacity to fully opaque */
 }

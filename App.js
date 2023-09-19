@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <div>
-        <Tooltip style={{ marginTop: '500px', marginLeft: '500px' }} text="This is a tooltip in React">
+      <div style={{ display: flex, justifyContent: "center", alignItems: 'center' }}>
+        <Tooltip text="This is a tooltip in React">
           <button>Hover me</button>
         </Tooltip>
       </div>
