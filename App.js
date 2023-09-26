@@ -7,10 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <div style={{ display: flex, justifyContent: "center", alignItems: 'center' }}>
-        <Tooltip text="This is a tooltip in React">
+      <div style={{ display: "flex", justifyContent: "center", alignItems: 'center' }}>
+      <Tooltip text="This is a Tooltip" style={{ marginTop: "100px" }}>
           <button>Hover me</button>
-        </Tooltip>
+      </Tooltip>
       </div>
     </div>
   );
